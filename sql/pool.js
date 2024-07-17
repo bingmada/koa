@@ -5,13 +5,13 @@
  * @LastEditTime: 2024-07-16 21:16:45
  * @Description: 
  */
-const mysql = require('mysql2')
+const mysql = require('mysql2/promise');  // Ensure using the promise-based API
 
 // 注意修改成你的连接信息
 const config = {
-  database: 'koadb',  // 数据库
-  username: 'root',   // 用户
-  password: '000000', // 密码
+  database: 'THS_KH',  // 数据库
+  user: 'root',   // 用户
+  password: 'lyd124500', // 密码
   port: '3306',       // MySQL端口号
   host: 'localhost'   // MySQL地址
 }
